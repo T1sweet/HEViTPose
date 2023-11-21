@@ -59,9 +59,7 @@ Download [COCO ](https://cocodataset.org/#home) and [MPII](http://human-pose.mpi
 
 ### 1. Download trained model
 * [COCO](https://1drv.ms/u/s!AhpKYLhXKpH7gv8RepyMU_iU5uhxhg?e=ygs4Me)
-* [CrowdPose](https://1drv.ms/u/s!AhpKYLhXKpH7gv8RepyMU_iU5uhxhg?e=ygs4Me)
-* [OCHuman](https://1drv.ms/u/s!AhpKYLhXKpH7gv8RepyMU_iU5uhxhg?e=ygs4Me)
-* [ImageNet pre-trained](https://1drv.ms/u/s!AhpKYLhXKpH7gv8RepyMU_iU5uhxhg?e=ygs4Me)
+* [MPII](https://1drv.ms/u/s!AhpKYLhXKpH7gv8RepyMU_iU5uhxhg?e=ygs4Me)
 
 ### 2. Evaluate Model
 Change the checkpoint path by modifying `TEST.MODEL_FILE` option in *.yaml* or command line. 
@@ -113,23 +111,19 @@ Note that you should modify corresponding batch size for each gpu by `TRAIN.IMAG
 ## Main Results
 With the code contained in this repo, you should be able to reproduce the following results. 
 ### Results on COCO val and test-dev set
+|   Method   |   Test set    | Input size |    AP | AP.5  | AP .75 | AP (M) | AP (L) |
+|------------|---------------|------------|-------|-------|------ -|--------|--------|
+| HEViTPose-B| COCO val      | 256        | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
+| HEViTPose-S| COCO val      | 256        | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |   
+| HEViTPose-T| COCO val      | 256        | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |
+| HEViTPose-B| COCO test-dev | 256        | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
+| HEViTPose-S| COCO test-dev | 256        | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |   
+| HEViTPose-T| COCO test-dev | 256        | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |
+
 | Method| Test set | Backbone | Input size |     AP | AP.5 | AP .75 | AP (M) | AP (L) |
 |----------|----------|----------|------------|-------|-------|--------|--------|--------| 
-| CID| COCO val | HRNet-W32  | 512         | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
-| CID| COCO test-dev | HRNet-W32  | 512         | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |     
-
-### Results on CrowdPose test set
-| Method| Backbone | Input size |     AP | AP .5 | AP .75 | AP (E) | AP (M) | AP (H) |
-|----------|----------|------------|-------|-------|--------|--------|--------| --------| 
-| CID| HRNet-W32  | 512         | 71.2  | 89.8  |  76.7  | 77.9  |  71.9  | 63.8  | 
-
-### Results on OCHuman dataset
-| Method| Train set | Test set | Backbone | Input size |     AP | AP.5 | AP .75 |     AR |
-|----------|----------|----------|------------|-------|-------|--------|--------|--------| 
-| CID| OCHuman val | OCHuman test | HRNet-W32  | 512         | 57.7  | 75.5  |  63.3  |  75.7  |
-| CID| COCO train | OCHuman val | HRNet-W32  | 512         | 45.7  | 58.8  |  51.1  |  78.3  |
-| CID| COCO train | OCHuman test | HRNet-W32  | 512         | 44.6  | 57.5  |  49.3  |  78.0  | 
-
+| HEViTPose-B| COCO val | HRNet-W32  | 512         | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
+| HEViTPose-B| COCO test-dev | HRNet-W32  | 512         | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |  
 
 ## Citations
 If you find this code useful for your research, please cite our paper:
