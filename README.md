@@ -12,8 +12,8 @@
 
 ### 1. Clone code
 ```shell
-    git clone https://github.com/kennethwdk/CID
-    cd ./CID
+    git clone https://github.com/T1sweet/HEViTPose
+    cd ./HEViTPose
 ```
 ### 2. Create a conda environment for this repo
 ```shell
