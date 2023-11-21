@@ -46,18 +46,14 @@ Download [COCO ](https://cocodataset.org/#home) and [MPII](http://human-pose.mpi
 |   |   |   └──000000000139.jpg
 |   |   └──test2017
 |   |   |   └──000000000001.jpg
-├── crowdpose
+├── mpii
 │   └── annotations
-|   |   └──crowdpose_trainval.json(refer to DEKR, link:https://github.com/HRNet/DEKR)
-|   |   └──crowdpose_test.json
+|   |   └──mpii_train.json(refer to DEKR, link:https://github.com/HRNet/DEKR)
+|   |   └──mpii_val.json
+|   |   └──mpii_test.json
+|   |   └──mpii_gt_val.mat
 |   └── images
 |   |   └──100000.jpg
-├── ochuman
-│   └── annotations
-|   |   └──ochuman_val.json(ochuman_coco_format_val_range_0.00_1.00.json)
-|   |   └──ochuman_test.json(ochuman_coco_format_test_range_0.00_1.00.json)
-|   └── images
-|   |   └──000001.jpg
 ```
 ## Usage
 
