@@ -144,4 +144,4 @@ If you have any questions about this code or paper, feel free to contact me at
 CP935011539@outlook.com.
 
 ## Acknowledgement
-The code is mainly encouraged by [MMPose](https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation), [EfficientViT](https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation) and [PVTv2](https://github.com/HRNet/DEKR).
+The code is mainly encouraged by [MMPose](https://github.com/open-mmlab/mmpose/tree/v0.29.0).
