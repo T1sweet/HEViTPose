@@ -120,7 +120,7 @@ With the code contained in this repo, you should be able to reproduce the follow
 | HEViTPose-S  | MPII test-dev |   256×256   | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
 | HEViTPose-B   | MPII test-dev |  256×256   | 10.63M| 5.58G | 98.0 |96.1 |91.3 |86.5 |90.2 |86.6 |83.0 |90.7|
 
-### Results on COCO val and test-dev set
+### Results on COCO val2017 and test-dev2017 set
 | Method| Test set | Input size |     AP | AP.5 | AP .75 | AP (M) | AP (L) |
 |----------|----------|------------|-------|-------|--------|--------|--------| 
 | HEViTPose-B| COCO val | 256×256      | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
