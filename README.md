@@ -2,7 +2,7 @@
 
 [[`Paper`](.pdf)]
 
-> [Contextual Instance Decoupling for Robust Multi-Person Pose Estimation](.html)  
+> [HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation](.html)  
 > Chengpeng Wu, Guangxing Tan*, Chunyu Li
 
 
