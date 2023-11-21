@@ -17,20 +17,20 @@
 ```
 ### 2. Create a conda environment for this repo
 ```shell
-    conda create -n CID python=3.9
-    conda activate CID
+    conda create -n HEViTPose python=3.9
+    conda activate HEViTPose
 ```
 ### 3. Install PyTorch >= 1.6.0 following official instruction, *e.g.*,
 ```shell
     conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
-There is no requirement for cudatoolkit version for CID, so just use the newest version.
+There is no requirement for cudatoolkit version for HEViTPose, so just use the newest version.
 ### 4. Install other dependency python packages
 ```shell
     pip install -r requirements.txt
 ```
 ### 5. Prepare dataset
-Download [COCO ](https://cocodataset.org/#home), [CrowdPose](https://github.com/Jeff-sjtu/CrowdPose) and [OCHuman](https://github.com/liruilong940607/OCHumanApi) from website and put the zip file under the directory following below structure, (xxx.json) denotes their original name.
+Download [COCO ](https://cocodataset.org/#home) and [MPII](http://human-pose.mpi-inf.mpg.de/#download) from website and put the zip file under the directory following below structure, (xxx.json) denotes their original name.
 
 ```
 ./data
