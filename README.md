@@ -7,6 +7,7 @@
 
 
 ![overview](./img/PerformanceComparison2.png)
+<img src="https://github.com/img/PerformanceComparison2.png" width="48">
 
 ## Installation
 
