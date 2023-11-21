@@ -122,9 +122,9 @@ With the code contained in this repo, you should be able to reproduce the follow
 
 ### Results on COCO val and test-dev set
 | Method| Test set | Backbone | Input size |     AP | AP.5 | AP .75 | AP (M) | AP (L) |
-|----------|----------|----------|------------|-------|-------|--------|--------|--------| 
-| HEViTPose-B| COCO val | HRNet-W32  | 512         | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
-| HEViTPose-B| COCO test-dev | HRNet-W32  | 512         | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |  
+|----------|----------|------------|-------|-------|--------|--------|--------| 
+| HEViTPose-B| COCO val | 256         | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
+| HEViTPose-B| COCO test-dev | 256         | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |  
 
 ## Citations
 If you find this code useful for your research, please cite our paper:
