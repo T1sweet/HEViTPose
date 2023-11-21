@@ -110,17 +110,17 @@ Note that you should modify corresponding batch size for each gpu by `TRAIN.IMAG
 
 ## Main Results
 With the code contained in this repo, you should be able to reproduce the following results. 
-### Results on COCO val and test-dev set
+### Results on MPII val and test set
 |   Method   |   Test set    | Input size |    AP | AP.5  | AP .75 | AP (M) | AP (L) |
 |------------|---------------|------------|-------|-------|--------|--------|--------|
-| HEViTPose-B| COCO val      | 256        | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
-| HEViTPose-S| COCO val      | 256        | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |   
-| HEViTPose-T| COCO val      | 256        | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |
-| HEViTPose-B| COCO test-dev | 256        | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
-| HEViTPose-S| COCO test-dev | 256        | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |   
-| HEViTPose-T| COCO test-dev | 256        | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |
+| HEViTPose-B| MPII val      |     256    | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
+| HEViTPose-S| MPII val      |     256    | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |   
+| HEViTPose-T| MPII val      |     256    | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |
+| HEViTPose-B| MPII test-dev |     256    | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
+| HEViTPose-S| MPII test-dev |     256    | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |   
+| HEViTPose-T| MPII test-dev |     256    | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |
 
-### Results on MPII val and test set
+### Results on COCO val and test-dev set
 | Method| Test set | Backbone | Input size |     AP | AP.5 | AP .75 | AP (M) | AP (L) |
 |----------|----------|----------|------------|-------|-------|--------|--------|--------| 
 | HEViTPose-B| COCO val | HRNet-W32  | 512         | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
