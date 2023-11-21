@@ -6,7 +6,7 @@
 > Chengpeng Wu, Guangxing Tan*, Chunyu Li
 
 
-![overview](.png)
+![overview](./img/PerformanceComparison2.png)
 
 ## Installation
 
