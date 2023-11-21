@@ -127,7 +127,7 @@ With the code contained in this repo, you should be able to reproduce the follow
 | HEViTPose-B| COCO test-dev | 256     | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |  
 
 ### Visualization of Human Pose Estimation
-![Visualization](.png)
+![Visualization](./img/visualization.png)
 ## Citations
 If you find this code useful for your research, please cite our paper:
 
