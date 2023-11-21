@@ -113,18 +113,18 @@ With the code contained in this repo, you should be able to reproduce the follow
 ### Results on MPII val and test set
 |   Method     |   Test set    | Input size |Params |GFLOPs | Hea| Sho| Elb| Wri |Hip| Kne |Ank |Total|
 |---------------|---------------|------------|-------|-------|----|----|----|-----|---|-----|----|-----|
-| HEViTPose-T   | MPII val      |     256    | 3.21M | 1.75G | 97.6 |95.1 |89.0 |83.6 |89.1 |83.9 |79.1 |88.7|
-| HEViTPose-S   | MPII val      |     256    | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
-| HEViTPose-B   | MPII val      |     256    | 10.63M| 5.58G | 98.0 |96.1 |91.3 |86.5 |90.2 |86.6 |83.0 |90.7|
-| HEViTPose-T   | MPII test-dev |     256    | 3.21M | 1.75G | 97.6 |95.1 |89.0 |83.6 |89.1 |83.9 |79.1 |88.7|
-| HEViTPose-S  | MPII test-dev |     256    | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
-| HEViTPose-B   | MPII test-dev |     256    | 10.63M| 5.58G | 98.0 |96.1 |91.3 |86.5 |90.2 |86.6 |83.0 |90.7|
+| HEViTPose-T   | MPII val      |  256×256  | 3.21M | 1.75G | 97.6 |95.1 |89.0 |83.6 |89.1 |83.9 |79.1 |88.7|
+| HEViTPose-S   | MPII val      |  256×256    | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
+| HEViTPose-B   | MPII val      |  256×256   | 10.63M| 5.58G | 98.0 |96.1 |91.3 |86.5 |90.2 |86.6 |83.0 |90.7|
+| HEViTPose-T   | MPII test-dev |  256×256    | 3.21M | 1.75G | 97.6 |95.1 |89.0 |83.6 |89.1 |83.9 |79.1 |88.7|
+| HEViTPose-S  | MPII test-dev |   256×256   | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
+| HEViTPose-B   | MPII test-dev |  256×256   | 10.63M| 5.58G | 98.0 |96.1 |91.3 |86.5 |90.2 |86.6 |83.0 |90.7|
 
 ### Results on COCO val and test-dev set
 | Method| Test set | Input size |     AP | AP.5 | AP .75 | AP (M) | AP (L) |
 |----------|----------|------------|-------|-------|--------|--------|--------| 
-| HEViTPose-B| COCO val | 256         | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
-| HEViTPose-B| COCO test-dev | 256     | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |  
+| HEViTPose-B| COCO val | 256×256      | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
+| HEViTPose-B| COCO test-dev | 256×256   | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |  
 
 ### Visualization of Human Pose Estimation
 ![Visualization](./img/visualization.png)
