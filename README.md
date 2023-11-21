@@ -121,10 +121,10 @@ With the code contained in this repo, you should be able to reproduce the follow
 | HEViTPose-B| MPII test-dev |     256    | 10.63M| 5.58G | 98.0 |96.1 |91.3 |86.5 |90.2 |86.6 |83.0 |90.7|
 
 ### Results on COCO val and test-dev set
-| Method| Test set | Backbone | Input size |     AP | AP.5 | AP .75 | AP (M) | AP (L) |
+| Method| Test set | Input size |     AP | AP.5 | AP .75 | AP (M) | AP (L) |
 |----------|----------|------------|-------|-------|--------|--------|--------| 
 | HEViTPose-B| COCO val | 256         | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
-| HEViTPose-B| COCO test-dev | 256         | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |  
+| HEViTPose-B| COCO test-dev | 256     | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |  
 
 ## Citations
 If you find this code useful for your research, please cite our paper:
