@@ -131,17 +131,17 @@ If you find this code useful for your research, please cite our paper:
 
 ```
 @InProceedings{Wang_2022_CVPR,
-    author    = {Wang, Dongkai and Zhang, Shiliang},
-    title     = {Contextual Instance Decoupling for Robust Multi-Person Pose Estimation},
+    author    = {Chengpeng Wu, Guangxing Tan*, Chunyu Li},
+    title     = {HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     month     = {June},
-    year      = {2022},
+    year      = {2024},
     pages     = {11060-11068}
 }
 ```
 ## Contact me
 If you have any questions about this code or paper, feel free to contact me at
-dongkai.wang@pku.edu.cn.
+CP935011539@outlook.com.
 
 ## Acknowledgement
-The code is mainly encouraged by [HigherHRNet](https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation) and [DEKR](https://github.com/HRNet/DEKR).
+The code is mainly encouraged by [MMPose](https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation), [EfficientViT](https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation) and [PVTv2](https://github.com/HRNet/DEKR).
