@@ -19,20 +19,33 @@
     git clone https://github.com/T1sweet/HEViTPose
     cd ./HEViTPose
 ```
+
 ### 2. Create a conda environment for this repo
 ```shell
     conda create -n HEViTPose python=3.9
     conda activate HEViTPose
 ```
-### 3. Install PyTorch >= 1.6.0 following official instruction, *e.g.*,
+
+### 3. Install PyTorch >= 1.6.0 following official instruction, *e.g.*, 
 ```shell
-    conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+    conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
 ```
-There is no requirement for cudatoolkit version for HEViTPose, so just use the newest version.
+Our model is trained in a GPU platforms and relies on the following versions: 
+torch==1.10.1+cu113, torchvision==0.11.2+cu113
+
 ### 4. Install other dependency python packages
+Our code is based on the MMPose 0.29.0 code database, and dependencies can be installed through the methods provided by [MMLab](https://github.com/open-mmlab/mmpose/blob/v0.29.0/docs/en/install.md). 
+Install MMCV using MIM.
+```shell
+    conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
+    pip install -U openmim
+    mim install mmcv-full==1.4.5
+```
+Install other dependency.
 ```shell
     pip install -r requirements.txt
 ```
+
 ### 5. Prepare dataset
 Download [COCO ](https://cocodataset.org/#home) and [MPII](http://human-pose.mpi-inf.mpg.de/#download) from website and put the zip file under the directory following below structure, (xxx.json) denotes their original name.
 
