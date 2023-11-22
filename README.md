@@ -34,7 +34,7 @@ torch==1.10.1+cu113, torchvision==0.11.2+cu113
 ```
 
 ### 4. Install other dependency python packages
-Our code is based on the MMPose 0.29.0 code database, and dependencies can be installed through the methods provided by [MMLab](https://github.com/open-mmlab/mmpose/blob/v0.29.0/docs/en/install.md). 
+Our code is based on the MMPose 0.29.0 code database, and dependencies can be installed through the methods provided by [MMPose](https://github.com/open-mmlab/mmpose/blob/v0.29.0/docs/en/install.md). 
 Install MMCV using MIM.
 ```shell
     conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
