@@ -109,14 +109,6 @@ python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViT
 python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViTPose-B_coco_256x256.py
 ```
 
-The experimental results are obtained by training on two NVIDIA RTX 3090. You can use more gpu cards for model training by specifying gpu ids in `--gpus` optition, *e.g.*, training model on crowdpose on 8 gpu cards by
-```python
-# train on coco with 8 gpus
-python tools/train.py --cfg experiments/coco.yaml --gpus 0,1,2,3,4,5,6,7
-```
-
-Note that you should modify corresponding batch size for each gpu by `TRAIN.IMAGES_PER_GPU`.
-
 ## Main Results
 With the code contained in this repo, you should be able to reproduce the following results. 
 ### Results on MPII val and test set
