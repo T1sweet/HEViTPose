@@ -79,28 +79,24 @@ Download [COCO ](https://cocodataset.org/#home) and [MPII](http://human-pose.mpi
 * [MPII](https://1drv.ms/u/s!AhpKYLhXKpH7gv8RepyMU_iU5uhxhg?e=ygs4Me)
 
 ### 2. Evaluate Model
-Change the checkpoint path by modifying `TEST.MODEL_FILE` option in *.yaml* or command line. 
-
-`--gpus` option specifies the gpu ids for evaluation, multiple ids denotes multiple gpu evaluation.
+Change the checkpoint path by modifying command line. 
+python tools/test.py config checkpoint --gpus
+`config` option means the configuration file, which must be set.
+`checkpoint` option means the training weight file and must be set.
 
 ```python
-# evaluate on coco val set with 2 gpus
-python tools/valid.py --cfg experiments/coco.yaml --gpus 0,1 TEST.MODEL_FILE model/coco/checkpoint.pth.tar
+# evaluate HEViTPose-B on mpii val set
+python tools/test.py ..\configs\body\2d_kpt_sview_rgb_img\topdown_heatmap\HEViTPose-B_mpii_256x256.py \work_dir\HEViTPose\HEViTPose-B.pth
 
-# evaluate on coco test-dev set with 2 gpus (submit to codalab)
-python tools/infer_coco_testdev.py --cfg experiments/coco.yaml --gpus 0,1 TEST.MODEL_FILE model/coco/checkpoint.pth.tar
+# evaluate HEViTPose-S on mpii val set
+python tools/test.py ..\configs\body\2d_kpt_sview_rgb_img\topdown_heatmap\HEViTPose-S_mpii_256x256.py \work_dir\HEViTPose\HEViTPose-S.pth
 
-# evaluate on crowdpose test set with 2 gpus
-python tools/valid.py --cfg experiments/crowdpose.yaml --gpus 0,1 TEST.MODEL_FILE model/crowdpose/checkpoint.pth.tar
+# evaluate HEViTPose-T on mpii val set
+python tools/test.py ..\configs\body\2d_kpt_sview_rgb_img\topdown_heatmap\HEViTPose-T_mpii_256x256.py \work_dir\HEViTPose\HEViTPose-T.pth
 
-# evaluate on ochuman test set with 2 gpus (trained on ochuman val set)
-python tools/valid.py --cfg experiments/ochuman_val.yaml --gpus 0,1 TEST.MODEL_FILE model/ochuman/checkpoint.pth.tar
+# evaluate HEViTPose-T on coco val set
+python tools/test.py ..\configs\body\2d_kpt_sview_rgb_img\topdown_heatmap\HEViTPose-B_coco_256x256.py \work_dir\HEViTPose\HEViTPose-B_coco.pth
 
-# evaluate on ochuman test set with 2 gpus (trained on coco train set)
-python tools/valid.py --cfg experiments/ochuman_coco.yaml --gpus 0,1 TEST.MODEL_FILE model/coco/checkpoint.pth.tar
-
-# evaluate on ochuman val set with 2 gpus (trained on coco train set)
-python tools/valid.py --cfg experiments/ochuman_coco.yaml --gpus 0,1 TEST.MODEL_FILE model/coco/checkpoint.pth.tar DATASET.TEST val
 ```
 
 ### 3. Train Model
