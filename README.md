@@ -79,38 +79,34 @@ Download [COCO ](https://cocodataset.org/#home) and [MPII](http://human-pose.mpi
 * [MPII](https://1drv.ms/u/s!AhpKYLhXKpH7gv8RepyMU_iU5uhxhg?e=ygs4Me)
 
 ### 2. Evaluate Model
-Change the checkpoint path by modifying command line. 
-python tools/test.py config checkpoint --gpus
+Change the checkpoint path by modifying `pretrained` in HEViTPose-B_mpii_256x256.py, and run following commands:
+python tools/test.py config checkpoint
 `config` option means the configuration file, which must be set.
 `checkpoint` option means the training weight file and must be set.
 
 ```python
 # evaluate HEViTPose-B on mpii val set
-python tools/test.py ..\configs\body\2d_kpt_sview_rgb_img\topdown_heatmap\HEViTPose-B_mpii_256x256.py \work_dir\HEViTPose\HEViTPose-B.pth
+python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViTPose-B_mpii_256x256.py /work_dir/HEViTPose/HEViTPose-B.pth
 
 # evaluate HEViTPose-S on mpii val set
-python tools/test.py ..\configs\body\2d_kpt_sview_rgb_img\topdown_heatmap\HEViTPose-S_mpii_256x256.py \work_dir\HEViTPose\HEViTPose-S.pth
+python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViTPose-S_mpii_256x256.py /work_dir/HEViTPose/HEViTPose-S.pth
 
 # evaluate HEViTPose-T on mpii val set
-python tools/test.py ..\configs\body\2d_kpt_sview_rgb_img\topdown_heatmap\HEViTPose-T_mpii_256x256.py \work_dir\HEViTPose\HEViTPose-T.pth
+python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViTPose-T_mpii_256x256.py /work_dir/HEViTPose/HEViTPose-T.pth
 
-# evaluate HEViTPose-T on coco val set
-python tools/test.py ..\configs\body\2d_kpt_sview_rgb_img\topdown_heatmap\HEViTPose-B_coco_256x256.py \work_dir\HEViTPose\HEViTPose-B_coco.pth
+# evaluate HEViTPose-B on coco val set
+python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViTPose-B_coco_256x256.py /work_dir/HEViTPose/HEViTPose-B_coco.pth
 
 ```
 
 ### 3. Train Model
-
-You need to download HRNet-W32 imagenet pretrained model (see above) and change the checkpoint path by modifying `MODEL.PRETRAINED` in .yaml, and run following commands:
+Change the checkpoint path by modifying `pretrained` in HEViTPose-B_mpii_256x256.py, and run following commands:
 ```python
-# train on coco with 2 gpus
-python tools/train.py --cfg experiments/coco.yaml --gpus 0,1
+# evaluate HEViTPose-B on mpii val set
+python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViTPose-B_mpii_256x256.py
 
-# train on crowdpose with 2 gpus
-python tools/train.py --cfg experiments/crowdpose.yaml --gpus 0,1
-
-# train on ochuman with 2 gpus
-python tools/train.py --cfg experiments/ochuman_val.yaml --gpus 0,1
+# evaluate HEViTPose-B on coco val2017 set
+python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViTPose-B_coco_256x256.py
 ```
 
 The experimental results are obtained by training on two NVIDIA RTX 3090. You can use more gpu cards for model training by specifying gpu ids in `--gpus` optition, *e.g.*, training model on crowdpose on 8 gpu cards by
