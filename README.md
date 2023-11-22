@@ -26,12 +26,12 @@
     conda activate HEViTPose
 ```
 
-### 3. Install PyTorch >= 1.6.0 following official instruction, *e.g.*, 
+### 3. Install PyTorch >= 1.6.0 following official instruction, e.g.
+Our model is trained in a GPU platforms and relies on the following versions: 
+torch==1.10.1+cu113, torchvision==0.11.2+cu113
 ```shell
     conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
 ```
-Our model is trained in a GPU platforms and relies on the following versions: 
-torch==1.10.1+cu113, torchvision==0.11.2+cu113
 
 ### 4. Install other dependency python packages
 Our code is based on the MMPose 0.29.0 code database, and dependencies can be installed through the methods provided by [MMLab](https://github.com/open-mmlab/mmpose/blob/v0.29.0/docs/en/install.md). 
