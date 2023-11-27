@@ -5,8 +5,13 @@
 > [HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation](https://arxiv.org/pdf/2311.13615.pdf)  
 > Chengpeng Wu, Guangxing Tan*, Chunyu Li
 
-![overview](.png)
-<img src="https://github.com/img/PerformanceComparison2.png" width="48">
+HEVITPose performance, parameters and GFLOPs comparison.
+
+![PerformanceComparison](./img/PerformanceComparison.png)
+
+The network architecture of HEVITPose
+
+![overview](img/NetworkGraph.png)
 
 ## Code coming soon...
 
