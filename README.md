@@ -1,8 +1,8 @@
 # HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation
 
-[[`Paper`](https://arxiv.org/pdf/2311.13615.pdf)]
+### Paper
 
-> [HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation](.html)  
+> [HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation](https://arxiv.org/pdf/2311.13615.pdf)  
 > Chengpeng Wu, Guangxing Tan*, Chunyu Li
 
 ![overview](.png)
