@@ -139,7 +139,7 @@ python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViT
 If you find this code useful for your research, please cite our paper:
 
 ```
-@InProceedings{Wang_2022_CVPR,
+@InProceedings{Wu_2024_CVPR,
     author    = {Chengpeng Wu, Guangxing Tan*, Chunyu Li},
     title     = {HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
