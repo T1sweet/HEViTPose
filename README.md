@@ -1,5 +1,7 @@
 # HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation
 
+## Code coming soon...
+
 ## Paper
 
 > [HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation](https://arxiv.org/pdf/2311.13615.pdf)  
@@ -31,9 +33,6 @@ With the code contained in this repo, you should be able to reproduce the follow
 ## Visualization
 
 ![Visualization](./img/visualization.png)
-
-
-## Code coming soon...
 
 
 
