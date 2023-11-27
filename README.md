@@ -151,7 +151,7 @@ If you find this code useful for your research, please cite our paper:
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     month     = {June},
     year      = {2024},
-    pages     = {11060-11068}
+    pages     = {}        %11060-11068
 }
 ```
 
