@@ -133,6 +133,9 @@ python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViT
 python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViTPose-B_coco_256x256.py
 ```
 
+## Contact me
+If you have any questions about this code or paper, feel free to contact me at
+CP935011539@outlook.com.
 
 
 ## Citations
@@ -148,9 +151,7 @@ If you find this code useful for your research, please cite our paper:
     pages     = {11060-11068}
 }
 ```
-## Contact me
-If you have any questions about this code or paper, feel free to contact me at
-CP935011539@outlook.com.
+
 
 ## Acknowledgement
 This algorithm is based on code database [MMPose](https://github.com/open-mmlab/mmpose/tree/v0.29.0), and its main ideas are inspired by [EfficientViT](https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_EfficientViT_Memory_Efficient_Vision_Transformer_With_Cascaded_Group_Attention_CVPR_2023_paper.pdf), [PVTv2](https://link.springer.com/content/pdf/10.1007/s41095-022-0274-8.pdf), [Swin](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.pdf) and other papers.
