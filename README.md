@@ -99,8 +99,9 @@ Download [MPII](http://human-pose.mpi-inf.mpg.de/#download) and [COCO ](https://
 ## Usage
 
 ### 1. Download trained model
-* [COCO](https://1drv.ms/u/s!AhpKYLhXKpH7gv8RepyMU_iU5uhxhg?e=ygs4Me)
 * [MPII](https://1drv.ms/u/s!AhpKYLhXKpH7gv8RepyMU_iU5uhxhg?e=ygs4Me)
+* [COCO](https://1drv.ms/u/s!AhpKYLhXKpH7gv8RepyMU_iU5uhxhg?e=ygs4Me)
+
 
 ### 2. Evaluate Model
 Change the checkpoint path by modifying `pretrained` in HEViTPose-B_mpii_256x256.py, and run following commands:
