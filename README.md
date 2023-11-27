@@ -5,9 +5,14 @@
 > [HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation](https://arxiv.org/pdf/2311.13615.pdf)  
 > Chengpeng Wu, Guangxing Tan*, Chunyu Li
 
-The network architecture of HEVITPose
+### The network architecture of HEVITPose
 
 ![overview](img/NetworkGraph.png)
+
+### Visualization
+
+![Visualization](./img/visualization.png)
+
 
 ## Code coming soon...
 
@@ -128,15 +133,6 @@ With the code contained in this repo, you should be able to reproduce the follow
 | HEViTPose-B| COCO val      | 256×256    | 75.4| 93.6 | 83.5 | 72.4 | 79.6 | 78.2 | 
 | HEViTPose-B| COCO test-dev | 256×256    | 72.6| 92.0 | 80.9 | 69.2 | 78.2 | 78.0 |  
 
-### Visualization of HEViTPose-B performance, parameters and GFLOPs
-Some examples of the prediction results of the HEViTPose network model for
-human posture include occlusion, multiple people, viewpoint and appearance change on the MPII (top) and COCO (bottom) data sets.
-
-![Visualization](./img/visualization.png)
-
-Computational overhead comparison
-
-![ComputationalOverhead](./img/ComputationalOverhead.png)
 
 ## Citations
 If you find this code useful for your research, please cite our paper:
