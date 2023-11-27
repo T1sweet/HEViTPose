@@ -5,11 +5,30 @@
 > [HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation](https://arxiv.org/pdf/2311.13615.pdf)  
 > Chengpeng Wu, Guangxing Tan*, Chunyu Li
 
-### The network architecture of HEVITPose
+## The network architecture of HEVITPose
 
 ![overview](img/NetworkGraph.png)
 
-### Visualization
+## Main Results
+With the code contained in this repo, you should be able to reproduce the following results. 
+### Results on MPII val and test set
+|   Method      |   Test set    | Input size |Params |GFLOPs | Hea| Sho| Elb| Wri |Hip| Kne |Ank |Total|
+|---------------|---------------|------------|-------|-------|----|----|----|-----|----|-----|----|-----|
+| HEViTPose-T   | MPII val      |  256×256   | 3.21M | 1.75G | 95.9 |94.9 |87.4 |81.6 |87.4 | 81.6 |77.2 |87.2|
+| HEViTPose-S   | MPII val      |  256×256   | 5.88M | 3.64G | 96.3 |95.2 |88.7 |83.3 |88.5 |83.9 |79.5 |88.5|
+| HEViTPose-B   | MPII val      |  256×256   | 10.63M| 5.58G | 96.5 |95.6 |89.5 |84.5 |89.1 |85.7 |81.1 |89.4|
+| HEViTPose-T   | MPII test-dev |  256×256   | 3.21M | 1.75G | 97.6 |95.1 |89.0 |83.6 |89.1 |83.9 |79.1 |88.7|
+| HEViTPose-S   | MPII test-dev |  256×256   | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
+| HEViTPose-B   | MPII test-dev |  256×256   | 10.63M| 5.58G | 98.0 |96.1 |91.3 |86.5 |90.2 |86.6 |83.0 |90.7|
+
+### Results on COCO val2017 and test-dev2017 set
+| Method     | Test set      | Input size |  AP | AP .5|AP .75|AP (M)|AP (L)| AR   |
+|------------|---------------|------------|-----|------|------|------|------|------| 
+| HEViTPose-B| COCO val      | 256×256    | 75.4| 93.6 | 83.5 | 72.4 | 79.6 | 78.2 | 
+| HEViTPose-B| COCO test-dev | 256×256    | 72.6| 92.0 | 80.9 | 69.2 | 78.2 | 78.0 |  
+
+
+## Visualization
 
 ![Visualization](./img/visualization.png)
 
@@ -115,23 +134,6 @@ python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViT
 python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViTPose-B_coco_256x256.py
 ```
 
-## Main Results
-With the code contained in this repo, you should be able to reproduce the following results. 
-### Results on MPII val and test set
-|   Method      |   Test set    | Input size |Params |GFLOPs | Hea| Sho| Elb| Wri |Hip| Kne |Ank |Total|
-|---------------|---------------|------------|-------|-------|----|----|----|-----|----|-----|----|-----|
-| HEViTPose-T   | MPII val      |  256×256   | 3.21M | 1.75G | 95.9 |94.9 |87.4 |81.6 |87.4 | 81.6 |77.2 |87.2|
-| HEViTPose-S   | MPII val      |  256×256   | 5.88M | 3.64G | 96.3 |95.2 |88.7 |83.3 |88.5 |83.9 |79.5 |88.5|
-| HEViTPose-B   | MPII val      |  256×256   | 10.63M| 5.58G | 96.5 |95.6 |89.5 |84.5 |89.1 |85.7 |81.1 |89.4|
-| HEViTPose-T   | MPII test-dev |  256×256   | 3.21M | 1.75G | 97.6 |95.1 |89.0 |83.6 |89.1 |83.9 |79.1 |88.7|
-| HEViTPose-S   | MPII test-dev |  256×256   | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
-| HEViTPose-B   | MPII test-dev |  256×256   | 10.63M| 5.58G | 98.0 |96.1 |91.3 |86.5 |90.2 |86.6 |83.0 |90.7|
-
-### Results on COCO val2017 and test-dev2017 set
-| Method     | Test set      | Input size |  AP | AP .5|AP .75|AP (M)|AP (L)| AR   |
-|------------|---------------|------------|-----|------|------|------|------|------| 
-| HEViTPose-B| COCO val      | 256×256    | 75.4| 93.6 | 83.5 | 72.4 | 79.6 | 78.2 | 
-| HEViTPose-B| COCO test-dev | 256×256    | 72.6| 92.0 | 80.9 | 69.2 | 78.2 | 78.0 |  
 
 
 ## Citations
