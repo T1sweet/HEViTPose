@@ -112,23 +112,31 @@ python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/HEViT
 ## Main Results
 With the code contained in this repo, you should be able to reproduce the following results. 
 ### Results on MPII val and test set
-|   Method     |   Test set    | Input size |Params |GFLOPs | Hea| Sho| Elb| Wri |Hip| Kne |Ank |Total|
-|---------------|---------------|------------|-------|-------|----|----|----|-----|---|-----|----|-----|
-| HEViTPose-T   | MPII val      |  256×256  | 3.21M | 1.75G | 97.6 |95.1 |89.0 |83.6 |89.1 |83.9 |79.1 |88.7|
-| HEViTPose-S   | MPII val      |  256×256    | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
-| HEViTPose-B   | MPII val      |  256×256   | 10.63M| 5.58G | 98.0 |96.1 |91.3 |86.5 |90.2 |86.6 |83.0 |90.7|
-| HEViTPose-T   | MPII test-dev |  256×256    | 3.21M | 1.75G | 97.6 |95.1 |89.0 |83.6 |89.1 |83.9 |79.1 |88.7|
-| HEViTPose-S  | MPII test-dev |   256×256   | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
+|   Method      |   Test set    | Input size |Params |GFLOPs | Hea| Sho| Elb| Wri |Hip| Kne |Ank |Total|
+|---------------|---------------|------------|-------|-------|----|----|----|-----|----|-----|----|-----|
+| HEViTPose-T   | MPII val      |  256×256   | 3.21M | 1.75G | 95.9 |94.9 |87.4 |81.6 |87.4 | 81.6 |77.2 |87.2|
+| HEViTPose-S   | MPII val      |  256×256   | 5.88M | 3.64G | 96.3 |95.2 |88.7 |83.3 |88.5 |83.9 |79.5 |88.5|
+| HEViTPose-B   | MPII val      |  256×256   | 10.63M| 5.58G | 96.5 |95.6 |89.5 |84.5 |89.1 |85.7 |81.1 |89.4|
+| HEViTPose-T   | MPII test-dev |  256×256   | 3.21M | 1.75G | 97.6 |95.1 |89.0 |83.6 |89.1 |83.9 |79.1 |88.7|
+| HEViTPose-S   | MPII test-dev |  256×256   | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
 | HEViTPose-B   | MPII test-dev |  256×256   | 10.63M| 5.58G | 98.0 |96.1 |91.3 |86.5 |90.2 |86.6 |83.0 |90.7|
 
 ### Results on COCO val2017 and test-dev2017 set
-| Method| Test set | Input size |     AP | AP.5 | AP .75 | AP (M) | AP (L) |
-|----------|----------|------------|-------|-------|--------|--------|--------| 
-| HEViTPose-B| COCO val | 256×256      | 69.8  | 88.5  |  76.6  |  64.0  |  78.9  | 
-| HEViTPose-B| COCO test-dev | 256×256   | 69.1  | 89.9  |  76.3  |  63.4  |  77.6  |  
+| Method     | Test set      | Input size |  AP | AP .5|AP .75|AP (M)|AP (L)| AR   |
+|------------|---------------|------------|-----|------|------|------|------|------| 
+| HEViTPose-B| COCO val      | 256×256    | 75.4| 93.6 | 83.5 | 72.4 | 79.6 | 78.2 | 
+| HEViTPose-B| COCO test-dev | 256×256    | 72.6| 92.0 | 80.9 | 69.2 | 78.2 | 78.0 |  
 
-### Visualization of Human Pose Estimation
+### Visualization of HEViTPose-B performance, parameters and GFLOPs
+Some examples of the prediction results of the HEViTPose network model for
+human posture include occlusion, multiple people, viewpoint and appearance change on the MPII (top) and COCO (bottom) data sets.
+
 ![Visualization](./img/visualization.png)
+
+Computational overhead comparison
+
+![ComputationalOverhead](./img/ComputationalOverhead.png)
+
 ## Citations
 If you find this code useful for your research, please cite our paper:
 
