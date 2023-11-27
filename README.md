@@ -31,6 +31,8 @@ With the code contained in this repo, you should be able to reproduce the follow
 
 
 ## Visualization
+Some examples of the prediction results of the HEViTPose network model for
+human posture include occlusion, multiple people, viewpoint and appearance change on the MPII (top) and COCO (bottom) data sets.
 
 ![Visualization](./img/visualization.png)
 
