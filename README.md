@@ -146,7 +146,7 @@ If you find this code useful for your research, please cite our paper:
 
 ```
 @misc{wu2024hevitpose,
-    title     = {{HEViTPose}: High-Efficiency Vision Transformer for Human Pose Estimation},
+    title     = {HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation},
     author    = {Chengpeng Wu, Guangxing Tan*, Chunyu Li},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     year      = {2023},
