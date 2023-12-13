@@ -144,7 +144,7 @@ CP935011539@outlook.com.
 ## Citations
 If you find this code useful for your research, please cite our paper:
 
-```
+```bibtex
 @misc{wu2024hevitpose,
     title     = {HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation},
     author    = {Chengpeng Wu, Guangxing Tan*, Chunyu Li},
