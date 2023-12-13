@@ -145,13 +145,14 @@ CP935011539@outlook.com.
 If you find this code useful for your research, please cite our paper:
 
 ```
-@InProceedings{Wu_2024_CVPR,
+@misc{wu2024hevitpose,
+    title     = {{HEViTPose}: High-Efficiency Vision Transformer for Human Pose Estimation},
     author    = {Chengpeng Wu, Guangxing Tan*, Chunyu Li},
-    title     = {HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2024},
-    pages     = {}        %11060-11068
+    year      = {2023},
+    eprint={2311.13615 },
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
 ```
 
