@@ -1,10 +1,10 @@
-# A high-accuracy and efficient 2D human pose estimation method based on the HEViTPose network
+# HEViTPose: towards high-accuracy and efficient 2D human pose estimation with cascaded group spatial reduction attentio
 
 ## Code coming soon...
 
 ## Paper
 
-> [A high-accuracy and efficient 2D human pose estimation method based on the HEViTPose network)
+> [HEViTPose: towards high-accuracy and efficient 2D human pose estimation with cascaded group spatial reduction attentio]
 > 
 > Chengpeng Wu
 
