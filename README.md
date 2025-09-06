@@ -4,7 +4,7 @@
 
 ## Paper
 
-> [HEViTPose: towards high-accuracy and efficient 2D human pose estimation with cascaded group spatial reduction attentio]
+> [HEViTPose: towards high-accuracy and efficient 2D human pose estimation with cascaded group spatial reduction attention]
 > 
 > Chengpeng Wu
 
