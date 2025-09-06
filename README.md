@@ -1,4 +1,4 @@
-# HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation
+# A high-accuracy and efficient 2D human pose estimation method based on the HEViTPose network
 
 ## Code coming soon...
 
