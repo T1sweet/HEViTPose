@@ -4,7 +4,8 @@
 
 ## Paper
 
-> [HEViTPose: High-Efficiency Vision Transformer for Human Pose Estimation](https://arxiv.org/pdf/2311.13615we.pdf)
+> [A high-accuracy and efficient 2D human pose estimation method based on the HEViTPose network)
+> 
 > Chengpeng Wu
 
 ## The network architecture of HEVITPose
